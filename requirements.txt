@@ -1,0 +1,23 @@
+# ── Core MCP framework ──────────────────────────────────────────────────────
+mcp>=1.0.0
+
+# ── Microsoft Graph authentication ─────────────────────────────────────────
+msal>=1.28.0
+httpx>=0.27.0
+
+# ── JWT token validation (Azure AD JWKS) ────────────────────────────────────
+python-jose[cryptography]>=3.3.0
+
+# ── HTTP server (production mode) ───────────────────────────────────────────
+uvicorn[standard]>=0.29.0
+starlette>=0.37.0
+
+# ── LangChain stack ─────────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.0          # works for both OpenAI and Azure OpenAI
+langchain-mcp-adapters>=0.1.0    # bridges LangChain ↔ MCP servers
+langgraph>=0.1.0                 # ReAct agent runtime
+
+# ── Utilities ───────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0             # load .env file

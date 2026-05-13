@@ -1,0 +1,13 @@
+# Real secrets — NEVER commit this
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Build
+dist/
+build/
